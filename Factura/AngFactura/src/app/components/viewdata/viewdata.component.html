@@ -1,0 +1,53 @@
+<div class="container">
+    <div
+      class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom"
+    >
+      <h2 class="h2">DATOS: Facturas Clientes</h2>
+    </div>
+  
+    <div class="table-responsive">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th scope="col">CodigoFactura</th>
+            <th scope="col">Cliente</th>
+            <th scope="col">Ciudad</th>
+            <th scope="col">NIT</th>
+            <th scope="col">TotalFactura</th>
+            <th scope="col">SubTotal</th>
+            <th scope="col">IVA</th>
+            <th scope="col">Retencion</th>
+            <th scope="col">FechaCreacion</th>
+            <th scope="col">Estado</th>
+            <th scope="col">Pagada</th>
+            <th scope="col">FechaPago</th>
+            <th class="text-center" scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let factura of Facturas; let i = index">
+            <th scope="row">{{ factura.codigoFactura }}</th>
+            <td>{{ factura.cliente }}</td>
+            <td>{{ factura.ciudad }}</td>
+            <td>{{ factura.nit }}</td>
+            <td>${{ factura.totalFactura }}</td>
+            <td>${{ factura.subTotal }}</td>
+            <td>${{ factura.iva }}</td>
+            <td>${{ factura.retencion }}</td>
+            <td>{{ factura.fechaCreacion }}</td>
+            <td>{{ factura.estado }}</td>
+            <td>{{ factura.pagada }}</td>
+            <td>{{ factura.fechaPago }}</td>
+            <td class="text-center">
+              <button class="botonEnviar"
+                routerLink="/Enviar/{{factura.codigoFactura}}"
+              >
+                Enviar correo
+              </button>
+
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>

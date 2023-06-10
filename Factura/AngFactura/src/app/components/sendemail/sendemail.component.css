@@ -1,0 +1,87 @@
+/* Estilos generales */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+  }
+  
+  .container {
+    max-width: 400px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  button[type="submit"] {
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #218838;
+  }
+  
+  /* Estilos adicionales */
+  textarea {
+    resize: vertical;
+  }
+  
+  /* Estilos específicos para el formulario de envío */
+  .formulario-envio {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .formulario-envio div {
+    margin-bottom: 20px;
+  }
+  
+  .formulario-envio label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .formulario-envio input[type="text"],
+  .formulario-envio input[type="email"],
+  .formulario-envio textarea {
+    width: 100%;
+  }
+  
+  .formulario-envio button[type="submit"] {
+    width: 100%;
+  }
+  
